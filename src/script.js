@@ -21,7 +21,8 @@ if (xpColetado<1000) {
 }
 
 console.log(
-    "\nO Herói de nome:"+nomeDoHeroi+",está no nivel de:"+Nivel+"."+
-    "\nQuantidade de Mosntros mortos:"+monstros+
-    "\nXp adquerido:"+xpColetado
+    ["\nO Herói de nome:"+nomeDoHeroi]+
+    ["\nEstá no nivel de:"+Nivel]+
+    ["\nQuantidade de Mosntros mortos:"+monstros]+
+    ["\nXp adquerido:"+xpColetado]
     )

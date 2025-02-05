@@ -15,6 +15,7 @@ while (continuar) { // loop
 let acessoPermitido = validarUsuario(); //Guardando o valor boolean dentro da acessoPermitido
 
 if (acessoPermitido) {// se o valor da função for true ele executa esse escopo:
+    
 let valorSaque = prompt("Digite o valor do saque:");
 
             if (valorSaque <= 4500) {

@@ -1,29 +1,27 @@
-function ValidacaoDeUsuario(){
-    let Programa = true
-    while (Programa) {
+function validarUsuario() {
+    let nomeUsuario = prompt("Digite o nome do usuário:");
+    let senha = prompt("Digite sua senha:");
+
+    return nomeUsuario === "Leonardo" && senha === "123Antonini";
+}
+let continuar = true
+while (continuar) {
     
-    let nomeDoUsuario = prompt("Digite o nome do usuario:")
-    let Senha = prompt("Digite sua senha:")
-    if((nomeDoUsuario ==="Leonardo") && (Senha === "123Antonini")){
-        Programa = false
-        console.log("Autorizado")
-   
-    }}
+
+let acessoPermitido = validarUsuario();
+
+if (acessoPermitido) {
+let valorSaque = prompt("Digite o valor do saque:");
+
+            if (valorSaque <= 4500) {
+                console.log("Sacando:"+valorSaque);
+                continuar = false
+            } else {
+                 console.log("Valor de saque inválido ou saldo insuficiente.");
+             }
+    } else {
+    console.log("Acesso negado");
+    let resposta = prompt("deseja Voltar ao inicio?(sim/não)");
+        continuar = resposta === "sim";
+    }
 }
-
-ValidacaoDeUsuario() === true
-
-if (ValidacaoDeUsuario = false) {
-    console.log("Acesso não autorizado")
-} else {
-    let saque = prompt("digite o valor do saque:")
-    if(saque <=4505){
-         console.log("sacando....")
-         console.log("foi sacado o valor de:R$"+saque)
-            }else{
-                 console.log("saldo insuficiente")
-                }
-
-}
-
-
